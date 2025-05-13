@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Search Game</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <h2>Word Search Game (Tap to Select)</h2>
 
-<h2>Word Search Game (Tap to Select)</h2>
-
-<div class="controls">
   <select id="levelSelect">
     <option value="basic">Basic</option>
     <option value="moderate">Moderate</option>
@@ -15,15 +16,14 @@
   </select>
   <button onclick="startGame()">Start Game</button>
   <button onclick="clearSelection()">Clear Selection</button>
-</div>
 
-<div id="grid" class="grid"></div>
+  <div id="grid" class="grid"></div>
 
-<div class="word-list">
-  <h3>Words to find:</h3>
-  <ul id="wordList"></ul>
-</div>
+  <div class="word-list">
+    <h3>Words to find:</h3>
+    <ul id="wordList"></ul>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
